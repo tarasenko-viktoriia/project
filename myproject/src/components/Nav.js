@@ -45,9 +45,9 @@ const H1 = styled.h1`
 
 const Button = styled.button`
 	background: transparent;
-	border: none;
 	cursor: pointer;
 	border: 2px solid rgb(65, 65, 65);
+	border-radius: 10px;
 	padding: 0.5rem;
 	transition: all 0.3s ease;
 	&:hover {
@@ -57,9 +57,9 @@ const Button = styled.button`
 `;
 const Button2 = styled.button`
 	background: transparent;
-	border: none;
 	cursor: pointer;
 	border: 2px solid rgb(65, 65, 65);
+	border-radius: 10px;
 	padding: 0.5rem;
 	transition: all 0.3s ease;
 	&:hover {
