@@ -6,11 +6,15 @@ import { faMusic } from "@fortawesome/free-solid-svg-icons";
 const Nav = ({ libraryStatus, setLibraryStatus }) => {
 	return (
 		<NavContainer>
-			<H1 libraryStatus={libraryStatus}>MusicSky</H1>
+			<H1 libraryStatus={libraryStatus}>Bits</H1>
 			<Button onClick={() => setLibraryStatus(!libraryStatus)}>
-				Library
+				Library 
 				<FontAwesomeIcon icon={faMusic} />
 			</Button>
+			<Button2 onClick={() => setLibraryStatus(!libraryStatus)}>
+				Library 
+				<FontAwesomeIcon icon={faMusic} />
+			</Button2>
 		</NavContainer>
 	);
 };
@@ -51,5 +55,16 @@ const Button = styled.button`
 		color: white;
 	}
 `;
-
+const Button2 = styled.button`
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	border: 2px solid rgb(65, 65, 65);
+	padding: 0.5rem;
+	transition: all 0.3s ease;
+	&:hover {
+		background: rgb(65, 65, 65);
+		color: white;
+	}
+`;
 export default Nav;
