@@ -33,8 +33,8 @@ const LibrarySong = ({ song, setCurrentSong, audioRef, isPlaying, songs, setSong
 		<LibrarySongContainer onClick={songSelectHandler} isActive={song.active}>
 			<Img src={song.cover} alt={song.name}></Img>
 			<LibrarySongDescription>
-				<H1>{song.name}</H1>
-				<H2>{song.artist}</H2>
+				<H3>{song.name}</H3>
+				<H4>{song.artist}</H4>
 			</LibrarySongDescription>
 		</LibrarySongContainer>
 	);
@@ -68,12 +68,12 @@ const Img = styled.img`
 	height: 60px;
 `;
 
-const H1 = styled.h3`
+const H3 = styled.h3`
 	padding-left: 1rem;
 	font-size: 1rem;
 `;
 
-const H2 = styled.h4`
+const H4 = styled.h4`
 	padding-left: 1rem;
 	font-size: 0.7rem;
 `;

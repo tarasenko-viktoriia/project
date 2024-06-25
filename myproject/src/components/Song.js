@@ -5,8 +5,8 @@ const Song = ({ currentSong }) => {
 	return (
 		<SongContainer>
 			<Img src={currentSong.cover} alt={currentSong.name}></Img>
-			<H1>{currentSong.name}</H1>
-			<H2>{currentSong.artist}</H2>
+			<H2>{currentSong.name}</H2>
+			<H3>{currentSong.artist}</H3>
 		</SongContainer>
 	);
 };
@@ -29,11 +29,11 @@ const Img = styled.img`
 	}
 `;
 
-const H1 = styled.h2`
+const H2 = styled.h2`
 	padding: 3rem 1rem 1rem 1rem;
 `;
 
-const H2 = styled.h3`
+const H3 = styled.h3`
 	font-size: 1rem;
 `;
 
