@@ -1,20 +1,45 @@
-* {
-	padding: 0;
+html{
+	background-color: rgb(134 144 144 / 14%);
+}
+
+body{
+	background-color: transparent;
+}
+
+html, body, #root, .home {
+	height: 100%;
 	margin: 0;
-	box-sizing: border-box;
 }
-body {
-	font-family: "Lato", sans-serif;
-}
-
-h1,
-h2,
-h3 {
-	color: rgb(54, 54, 54);
+.header{
+	background-color: white;
+	padding: 10px;
+	margin: 0;
+	font-size: 24px;
+	font-weight: 600;
 }
 
-h3,
-h4 {
-	font-weight: 400;
-	color: rgb(100, 100, 100);
+.menu {
+	border-radius: 0px 10px 10px 0px;
+	box-shadow: 4px 2px 3px 1px gray;
+	margin: 10px 0px 10px 0px;
+	height: 100;
+}
+.menu-item{
+	align-items: center;
+	color: rgb(108, 112, 113);
+	cursor: pointer;
+	padding: 20px;
+	border-radius: 0px 10px 10px 0px;
+}
+.menu .active{
+	background-color: rgb(196, 196, 196);
+	color: rgb(0, 166, 255);
+}
+
+.menu-item svg {
+	font-size: 20px;
+}
+.menu-item > span {
+	margin-left: 10px;
+	font-size: 16px;
 }
