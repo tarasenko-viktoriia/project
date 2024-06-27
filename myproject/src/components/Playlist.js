@@ -1,13 +1,17 @@
 import React, { useState } from "react";
+import {PlayList} from "../data"
 
 export default function Playlist() {
     const [isPlaylist, setIsPlaylist] = useState (true);
     return (
         <div className="songs d-flex flex-wrap"> 
         {isPlaylist
-            ? Playlist.map((item) => <div className="song text-center">
+            ? PlayList.map((item) => (
+            <div className="song text-center" onClick={()=> {
+                setIsPlaylist (false);}}>
                 <img className="audio-img" alt={item.title} src={item.imgUrl}/>
-            </div>)
+                <div>{item.title}</div>
+            </div>))
         : "songs"}
         </div>
     );

@@ -85,7 +85,7 @@ export const MusicList =[
         }
 ];
 
-export const Playlist = [
+export const PlayList = [
     {
         id: "1",
         title: "Melody",

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Menu from "./Menu"
-import {MusicList} from "../data";
+import {MusicList, PlayList} from "../data";
 import Song from "./Song";
 import Playlist from "./Playlist";
 
@@ -16,16 +16,16 @@ export default function Home(){
                 </div>
                 <div className="d-flex content">
                     <Menu isSongs={isSongs} setIsSongs={setIsSongs}/>
-                    { isSongs ? ( <div style={{flex: 1}}>
-                        {
+                    <div style={{flex: 1}}>
+                    { isSongs ? (
                             <div className="d-flex flex-wrap songs">
                                 {
                                     MusicList.map((item) => (<Song {...item}/> ))
                                 }
                             </div> 
-                        }
-                    </div>) : 
-                    <Playlist/>}
+                    ) : (
+                    <Playlist/>)}
+                    </div>  
                 </div>
             </div>
         </div>
