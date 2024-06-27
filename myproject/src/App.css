@@ -93,3 +93,71 @@ html, body, #root, .home {
 	margin: 0px 20px;
 	cursor: pointer;
 }
+.player {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+	color: black;
+}
+
+.player-controls {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+.player-controls:hover {
+	background-color: rgb(240, 239, 239);
+	border-radius: 15px;
+}
+.player .name{
+	padding-right: 15px;
+}
+
+.cursor-disabled{
+	cursor: not-allowed;
+}
+
+audio::-webkit-media-controls-panel {
+	background-color: white !important;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 769px){
+	.audio-img{
+		height: 125px;
+	}
+
+	.play-logo {
+		font-size: 7em;
+		top: 5px;
+		left: 15px;
+	}
+
+	.song {
+		width: 130px;
+	}
+
+	.menu-item > span {
+		display: none;
+	}
+
+	.menu-item svg {
+		font-size: 30px;
+	}
+
+	.playlist-header {
+		font-size: 20px;
+		margin: 10px 20px;
+		padding: 0px 20px;
+	}
+
+	.playlist-header > svg {
+		margin: 0px 10px;
+	}
+
+	.song {
+		padding-bottom: 20px;
+	}
+}
